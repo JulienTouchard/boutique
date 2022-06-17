@@ -1,0 +1,6 @@
+.cart{
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(212, 235, 255);
+}
