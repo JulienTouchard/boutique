@@ -1,35 +1,21 @@
+import Cart from "../Cart/Cart";
 import MenuBtn from "../MenuBtn/MenuBtn";
+
 import "./Menu.css";
-/* var clients = document.getElementById('clients');
-var services = document.getElementById('services');
 
-clients.addEventListener('click', function() {
-  clients.classList.toggle("active");
-  document.querySelector(".parent:not(#clients)").classList.toggle("invisible");
-}, false);
 
-services.addEventListener('click', function() {
-    clients.classList.toggle("active");
-    document.querySelector(".parent:not(#clients)").classList.toggle("invisible");
-}, false); */
-function Menu(props) {
-    
+function Menu(props){
     return (
-        <nav className="navigationWrapper">
-            <div className="logoWrapper">
-                <span className="stylish">Stylish</span>
-                <span className="logo">Logo</span>
-            </div>
-            <ul className="navigation">
-                <li className="parent">
-                    <MenuBtn title="">HOME</MenuBtn>{/* props.tile = innerText props.children = innerHTML */}
+        <nav>
+            <ul>
+                <li>
+                    <MenuBtn title="">HOME<i className="fa-solid fa-house"></i></MenuBtn>
                 </li>
-                <li className="parent">
-                    <MenuBtn title="">VINYLS<i className='fa-solid fa-compact-disc'></i></MenuBtn>
+                <li>
+                    <MenuBtn title="">Vinyl<i className="fa-solid fa-compact-disc"></i></MenuBtn>
                 </li>
-                <li className="parent" id="services" onClick={props.action}>
-                    {/* declaration d'event sur un element */}
-                    <MenuBtn title="">CART</MenuBtn>
+                <li onClick={props.action}>
+                    <MenuBtn title="" btnCart={true}>Cart<i className="fa-solid fa-cart-shopping"></i></MenuBtn>
                 </li>
             </ul>
         </nav>
@@ -37,3 +23,4 @@ function Menu(props) {
 }
 
 export default Menu;
+

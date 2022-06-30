@@ -1,6 +1,16 @@
 .cart{
     position: fixed;
-    width: 80vw;
+    overflow-y: scroll;
     height: 80vh;
-    background-color: rgb(212, 235, 255);
+    width: 80vw;
+    background-color: rgba(26, 26, 26, 0.774);
+    color: white;
+    z-index: 1;
+}
+table{
+    width: 80%;
+    margin: 0 auto;
+}
+table img{
+    max-width: 3rem;
 }

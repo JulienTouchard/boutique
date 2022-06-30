@@ -1,0 +1,17 @@
+.cart{
+    position: fixed;
+    overflow-y: scroll;
+    width: 80vw;
+    height: 80vh;
+    z-index: 2;
+    top: 5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:white;
+}
+table{
+    width: 80%;
+    margin: 0 auto;
+}
+table img{
+    max-width: 3rem;
+}

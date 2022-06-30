@@ -1,0 +1,13 @@
+.menuBtn{
+    padding: .5rem;
+    border-radius: .5rem;
+    box-sizing: border-box;
+}
+.menuBtn:hover{
+    border: rgb(119, 119, 119) .02rem solid;
+    -webkit-box-shadow: 2px 2px 5px 1px #7a7a7a;
+    box-shadow: 2px 2px 5px 1px #7a7a7a;
+    
+    
+    
+}

@@ -1,5 +1,6 @@
-import BuyBtn from "../BuyBtn/BuyBtn";
+import BuyBtn from "../BuyBtn/BuyBtn"
 import "./Card.css";
+
 
 function Card(props){
  return <div className="card">
@@ -9,8 +10,7 @@ function Card(props){
     <div className="cardInfos">{props.artist} - {props.genre} - {props.annee}</div>
     <p className="cardDesription">{props.children}</p>
     <div className="cardBtn">
-        {/* component CardBtn avec */}
-        <BuyBtn qte={props.qte}/>
+        <BuyBtn datakey={props.datakey}/>
     </div>
  </div>
 }

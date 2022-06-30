@@ -1,0 +1,40 @@
+.card {
+    max-height: 37rem;
+    padding: 0 1rem 1rem 1rem;
+    margin-bottom: 3rem;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: rgb(119, 119, 119) .02rem solid;
+    -webkit-box-shadow: 2px 2px 5px 1px #7a7a7a;
+    box-shadow: 2px 2px 5px 1px #7a7a7a;
+}
+.cardInfos{
+    font-style:italic ;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #7a7a7a;
+}
+.cardImg {
+    width: 100%;
+}
+
+.cardBtn {
+    text-align: center;
+    margin-top: auto;
+}
+
+.cardPrix {
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    padding: .5rem;
+    background-color: rgb(119, 119, 119);
+    color: #fff;
+    border-radius: .5rem;
+    -webkit-box-shadow: 2px 2px 5px 1px #000000;
+    box-shadow: 2px 2px 5px 1px #000000;
+    z-index: 1;
+}
