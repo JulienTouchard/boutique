@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Boutique.css';
 import dataBoutique from '../../dataBoutique.js';
-import CardShop from '../CardShop/CardShop.js';
+import CardShop from '../CardShop/CardShop';
 
 function Boutique() {
     // dataBoutiqueState =>getter | setDataBoutiquestate (fonction) setter
