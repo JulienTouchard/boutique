@@ -1,9 +1,9 @@
-import React,{useState} from "react";
+import React,{useState,useContext} from "react";
 import Logo from "../Logo/Logo";
 import UlMenu from "../UlMenu/UlMenu";
 import Burger from "../Burger/Burger";
-
 import "./Navigation.css";
+
 
 const dataMenu = [
     {
@@ -54,7 +54,9 @@ const Navigation = () => {
                 displayUl ? <UlMenu orientation={orientation} tabMenuNav={tabMenuNav}></UlMenu> : <></>
             }
             {
-                orientation ? <Burger click={() => setDisplayUl(!displayUl)}></Burger> : <></>      
+                orientation ? <Burger click={() => {
+                setDisplayUl(!displayUl);
+                }}></Burger> : <></>      
             }
         </nav>
     )
