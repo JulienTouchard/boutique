@@ -6,6 +6,7 @@ const BoutiqueProvider = (props) => {
     // dataBoutiqueState =>getter | setDataBoutiquestate (fonction) setter
     // useState(valeur) assigne une valeur à mon state
     const [dataBoutiqueState, setDataBoutiqueState] = useState(dataBoutique);
+
     const decrease = (id) => {
         /* let tmp = dataBoutiqueState[id]
         tmp.qte--; */
@@ -21,6 +22,7 @@ const BoutiqueProvider = (props) => {
             let tmpArray = dataBoutiqueState.map(e => e)
             tmpArray[id].qte--;
             setDataBoutiqueState(tmpArray);
+            setStatePanier([...statePanier,id]);
         }
     }
     const [statePanier, setStatePanier] = useState([])
@@ -32,7 +34,7 @@ const BoutiqueProvider = (props) => {
                 'dataBoutiqueState':dataBoutiqueState,
                 'setStatePanier':setStatePanier,
                 'setDataBoutiqueState':setDataBoutiqueState,
-                "decrease": decrease
+                'decrease': decrease
             }
         }>
             {props.children}

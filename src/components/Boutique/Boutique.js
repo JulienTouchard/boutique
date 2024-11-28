@@ -6,16 +6,21 @@ import CardShop from '../CardShop/CardShop';
 
 function Boutique() {
     const boutiqueContext = useContext(BoutiqueContext);
-    console.dir(boutiqueContext);
     return (
         <div className='card-container'>
+            {boutiqueContext.dataBoutiqueState.map(
+                (element, index) => {
+                    // element.id = index
+                    // spread operator => ...element,id:index
+                    return <CardShop key={index}
+                        data={{ id: index, ...element }}
+                        click={
+                            (e) => boutiqueContext.decrease(e)
 
-            {boutiqueContext.dataBoutiqueState.map((element, index) => {
-                // element.id = index
-                // spread operator => ...element,id:index
-                return <CardShop key={index} data={{ id: index, ...element }} click={(e) => boutiqueContext.decrease(e)}></CardShop>
-            })}
-            {/* {dataBoutiqueState.map((element,index)=><Card key={index} data={element}></Card>)} */}
+                        }>
+                    </CardShop>
+                })}
+            {/* {boutiqueContext.dataBoutiqueState.map((element,index)=><Card key={index} data={element}></Card>)} */}
         </div>
     )
 }
