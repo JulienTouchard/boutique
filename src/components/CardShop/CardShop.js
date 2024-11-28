@@ -16,11 +16,11 @@ function CardShop(props) {
   }
   return (
     <>
-      <Card sx={{ width: 345 }}>
+      <Card sx={{ width: "33.33%",padding:"1rem" }}>
         <CardMedia
           component="img"
           alt={props.data.name}
-          height="140"
+          height="400"
           image={"./assets/img/" + props.data.imgUrl}
         />
         <CardContent>

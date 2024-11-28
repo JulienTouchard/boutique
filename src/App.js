@@ -10,6 +10,7 @@ function App() {
         <Navigation></Navigation>
       </header>
       <main>
+      
         <Boutique></Boutique>
       </main>
       <footer></footer>

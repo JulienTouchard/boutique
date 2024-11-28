@@ -20,3 +20,13 @@
 .navMenu li:hover {
     backdrop-filter: blur(5px);
 }
+@media screen and (orientation: portrait){
+    .navMenu{
+        background-color: aqua;
+    }
+}
+@media screen and (orientation: landscape){
+    .navMenu{
+        background-color: fuchsia;
+    }
+}

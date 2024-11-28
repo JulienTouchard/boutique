@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import Logo from "../Logo/Logo";
 import UlMenu from "../UlMenu/UlMenu";
 import Burger from "../Burger/Burger";
-import Search from "../Search/Search";
+
 import "./Navigation.css";
 
 const dataMenu = [
@@ -35,6 +35,8 @@ function responsive() {
 const Navigation = () => {
     //let orientation = responsive();//true=>mobil ne marchera pas dans la vue
     // utilisation de state dans un component fonctionnel
+    // les states sont SYSTEMATIQUEMENT LIÉS a l'affichage dynamique d'elements
+    // dans le DOM
     const [orientation, setOrientation] = useState(responsive());
     const [displayUl, setDisplayUl] = useState(orientation ? false : true);
     const [tabMenuNav, settabMenuNav] = useState(dataMenu);
