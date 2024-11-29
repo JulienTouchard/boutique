@@ -15,7 +15,7 @@ function Boutique() {
                     return <CardShop key={index}
                         data={{ id: index, ...element }}
                         click={
-                            (e) => boutiqueContext.decrease(e)
+                            (e) => boutiqueContext.addToPanier(e)
 
                         }>
                     </CardShop>
